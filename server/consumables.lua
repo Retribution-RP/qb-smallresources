@@ -17,47 +17,6 @@ for k,_ in pairs(Config.ConsumablesEat) do
     end)
 end
 
---Add to qb-smallresources/server/consumables.lua
-
-for k,_ in pairs(Config.ConsumablesTea) do
-    QBCore.Functions.CreateUseableItem(k, function(source, item)
-        local Player = QBCore.Functions.GetPlayer(source)
-        if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
-        TriggerClientEvent("consumables:client:Uwububbleteablueberry", source, item.name)
-    end)
-end
-
-for k,_ in pairs(Config.ConsumablesUwuPan) do
-    QBCore.Functions.CreateUseableItem(k, function(source, item)
-        local Player = QBCore.Functions.GetPlayer(source)
-        if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
-        TriggerClientEvent("consumables:client:Uwububbleteablueberry", source, item.name)
-    end)
-end
-
-for k,_ in pairs(Config.ConsumablesUwuBowl) do
-    QBCore.Functions.CreateUseableItem(k, function(source, item)
-        local Player = QBCore.Functions.GetPlayer(source)
-        if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
-        TriggerClientEvent("consumables:client:Uwubudhabowl", source, item.name)
-    end)
-end
-
-for k,_ in pairs(Config.ConsumablesUwuSandy) do
-    QBCore.Functions.CreateUseableItem(k, function(source, item)
-        local Player = QBCore.Functions.GetPlayer(source)
-        if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
-        TriggerClientEvent("consumables:client:Uwusandy", source, item.name)
-    end)
-end
-
-for k,_ in pairs(Config.ConsumablesUwuSoup) do
-    QBCore.Functions.CreateUseableItem(k, function(source, item)
-        local Player = QBCore.Functions.GetPlayer(source)
-        if not Player.Functions.RemoveItem(item.name, 1, item.slot) then return end
-        TriggerClientEvent("consumables:client:uwumisosoup", source, item.name)
-    end)
-end
 ----------- / Drink
 for k,_ in pairs(Config.ConsumablesDrink) do
     QBCore.Functions.CreateUseableItem(k, function(source, item)
