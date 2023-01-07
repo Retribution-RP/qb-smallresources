@@ -107,6 +107,8 @@ Config.ConsumablesEat = {
     ["tosti"] = math.random(40, 50),
     ["twerks_candy"] = math.random(35, 54),
     ["snikkel_candy"] = math.random(40, 50),
+    ["uwusushi"] = math.random(45, 50),
+    ["uwupancake"] = math.random(25, 34),
 }
 
 Config.ConsumablesDrink = {
@@ -120,6 +122,31 @@ Config.ConsumablesAlcohol = {
     ["beer"] = math.random(30, 40),
     ["vodka"] = math.random(20, 40),
 }
+
+-- You need add these to ConsumableDonuts in qb-smallresources/config.lua   
+Config.ConsumablesDonuts = {
+    ["uwucupcake"] = math.random(40, 45),
+    }
+    -- You need add these to qb-smallresources/config.lua  
+    
+    Config.ConsumablesUwuBowl = {                         
+        ["uwubudhabowl"] = math.random(50, 60),
+    }
+    
+    Config.ConsumablesUwuSandy = {
+        ["uwuvanillasandy"] = math.random(50, 65),
+        ["uwuchocsandy"] = math.random(50, 65),
+    }
+    Config.ConsumablesUwuSoup = {
+        ["uwumisosoup"] = math.random(80, 90),
+    }
+    
+    Config.ConsumablesTea = {
+        -- uwu cafe
+        ["uwububbleteablueberry"] = math.random(55, 60),
+        ["uwububbletearose"] = math.random(55, 60),
+        ["uwububbleteamint"] = math.random(55, 60),
+    }
 
 Config.ConsumablesCustom = {
     -- ['newitem'] = {
